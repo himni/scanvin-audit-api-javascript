@@ -1,0 +1,26 @@
+{
+  "name": "auditoria",
+  "version": "1.0",
+  "description": "_IntroducoSeja_bem_vindo_a_documentao_da_API_do__SCANVIN_httpsscanvin_com_br_para_auditorias___Nossa_API_foi_criada_utilizando_o_padro__REST_httpsrestfulapi_net_e__HATEOAS_httpsrestfulapi_nethateoas_possibilitando_a_integrao_de_seu_sistema_ao_nosso_e_est_documentada_abaixo__Como_usar_a_APILogo_a_seguir_voc_encontrar_todos_os_recursos_e_mtodos_suportados_pela_API_sendo_que_essa_pgina_possibilita_que_voc_teste_os_recursos_e_mtodos_diretamente_atravs_dela__AutenticaoVoc_precisa_de_uma__API_KEY_httpsen_wikipedia_orgwikiApplication_programming_interface_keyHTTP_APIs_para_identificar_a_conta_que_est_realizando_solicitaes_para_a_API__Voc_pode_obter_seu_token_de_autenticao_no_seu__Painel_do_Cliente_httpsauditoria_scanvin_com_brclient__Insira_seu_token_no_campo_que_se_encontra_topo_desta_pgina_para_testar_os_mtodos_da_API__WebhookVoc_tambm_deve_configurar_seu__Webhook_httpsen_wikipedia_orgwikiWebhook_no__Painel_do_Cliente_httpsauditoria_scanvin_com_brclientwebhook__Quando_os_resultados_da_auditoria_estiverem_disponveis_uma_notificao_ser_enviada_para_a_URL_informada_via__HTTP_POST_httpsen_wikipedia_orgwikiPOST__HTTP__A_notificao_possui_Content_type_do_tipo_applicationjson__O__JSON_httpsen_wikipedia_orgwikiJSON_postado_contm_um_nico_campo_notification_id_que_contm_o_identificador_nico_do_evento_que_gerou_a_notificao__Deve_se_ento_chamar_o_endpoint_Inspection___Get_Inspection_informando_esse_mesmo_identificador_nico_para_recuperar_os_dados_da_vistoria_e_da_auditoria_realizada_",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3"
+  }
+}
